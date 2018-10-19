@@ -1,10 +1,14 @@
 def line(array)
+ def line(array)
   if array.any? == false 
     puts "The line is currently empty."
   else
-    new_array = array.each_with_index.map { |person, i| 
+    new_array = array.each_with_index.map { |   person, i| 
     "#{i+1}. #{person}"} 
-    puts "The line is currently #{new_array}."
+
+    line = new_array.join(", ")
+    
+    puts "The line is currently #{line}"
 end
 end
 
