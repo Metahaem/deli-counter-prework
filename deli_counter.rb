@@ -5,7 +5,7 @@
     new_array = array.each_with_index.map { |   person, i| 
     "#{i+1}. #{person}"} 
 
-    line = new_array.join(", ")
+    line = new_array.join(" ")
     
     puts "The line is currently: #{line}"
 end
